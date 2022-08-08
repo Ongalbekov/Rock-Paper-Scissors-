@@ -1,0 +1,117 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #dcc7b2;
+  color: rgb(10, 10, 8);
+}
+header {
+  padding: 30px;
+}
+header h1 {
+  text-align: center;
+  font-weight: 100;
+}
+.rounds{
+        border: 3px solid rgb(255, 255, 255);
+        width: 300px;
+        margin: 40px auto;
+        border-radius: 10px;
+        text-align: center;
+        padding: 15px 20px;
+}
+.round{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 15px;
+}
+.score-board {
+  border: 3px solid rgb(255, 255, 255);
+  width: 300px;
+  margin: 40px auto;
+  font-size: 60px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px 20px;
+  position: relative;
+}
+.badge {
+  background-color: rgb(158, 220, 139);
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 12px 6px;
+  border-radius: 12px;
+}
+#user-label, #computer-label{
+  position: absolute;
+  top: 50%;
+  transform: translate(-100%, -50%);
+}
+#computer-label{
+  transform: translate(485%, -50%);
+  background-color: #85c6d3;
+}
+.result {
+  font-weight: 300;
+  text-align: center;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.result {
+  line-height: 50px;
+}
+
+.choices {
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.choice {
+  display: inline-block;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  padding: 10px;
+  margin: auto 10px;
+  transition: all 0.3s ease;
+}
+.choice:hover{
+  padding: 15px;
+}
+#action-message {
+  text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 40px 0;
+}
+button{
+  border: 1px solid #222;
+  width: 10%;
+  display: inline-block;
+  background-color: #4ddd57;
+  padding: 8px;
+  border-radius: 5px;
+}
+button:active{
+  padding: 6px;
+}
+.winningStyles {
+  border: 3px solid #4dcc7d;
+  background-color: #319137;
+  box-shadow: 0 0 20px #043507;
+}
+.losingStyles {
+  border: 3px solid #c52e2e;
+  background-color: #cb4646;
+  box-shadow: 0 0 20px #2e0303;
+}
+.drawStyles {
+  border: 3px solid #444;
+  background-color: #222;
+  box-shadow: 0 0 20px #222;
+}

@@ -4,7 +4,60 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>RockPaperScissors</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <header><h1>Rock Paper Scissors</h1></header>
+    <main>
+      <section>
+        <article class="rounds">
+          <p>How many rounds?</p>
+          <div class="round">
+            <label for="round"
+              ><input type="radio" name="radio" id="round5" />5</label
+            >
+            <label for="round"
+              ><input type="radio" name="radio" id="round10" />10</label
+            >
+            <label for="round"
+              ><input type="radio" name="radio" id="round15" />15</label
+            >
+            <label for="round"
+              ><input type="radio" name="radio" id="round20" />20</label
+            >
+          </div>
+        </article>
+        <article class="score-board">
+          <div id="user-label" class="badge">user</div>
+          <div id="computer-label" class="badge">comp</div>
+          <span id="user-score">0</span> : <span id="computer-score">0</span>
+        </article>
+        <article class="result"><p>Let.s play</p></article>
+        <article class="choices">
+          <div id="rock" class="choice">
+            <img
+              src="./assets/img/icons8-hand-rock-skin-type-2-48.png"
+              alt="rock"
+            />
+          </div>
+          <div id="paper" class="choice">
+            <img
+              src="./assets/img/icons8-stop-gesture-skin-type-2-48.png"
+              alt="paper"
+            />
+          </div>
+          <div id="scissors" class="choice">
+            <img
+              src="./assets/img/icons8-hand-scissors-skin-type-2-48.png"
+              alt="scissors"
+            />
+          </div>
+          <p id="action-message">Make your move.</p>
+          <button id="restart">Restart</button>
+        </article>
+      </section>
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>
